@@ -353,14 +353,17 @@ box-shadow:0 0 30px #1428a0;
 
 .card img{
 
-
 width:100%;
 
-height:220px;
+height:auto;
+
+max-height:250px;
 
 object-fit:cover;
 
 border-radius:15px;
+
+display:block;
 
 
 }
