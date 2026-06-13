@@ -91,7 +91,7 @@ let value = search.value.toLowerCase();
 
 
 
-document.querySelectorAll(".category")
+document.querySelectorAll(".card[data-name]")
 .forEach(product=>{
 
 
