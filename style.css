@@ -505,3 +505,164 @@ position:absolute;
 
 
 }
+/* ================= FIXES ================= */
+
+img{
+    max-width:100%;
+}
+
+
+/* HERO RESPONSIVE */
+
+@media(max-width:900px){
+
+.hero{
+    height:auto;
+    min-height:100vh;
+    flex-direction:column;
+    text-align:center;
+    gap:40px;
+    padding:80px 8%;
+}
+
+
+.hero-content{
+    width:100%;
+}
+
+
+.hero-image{
+    width:90%;
+}
+
+
+.hero-image img{
+    max-height:350px;
+}
+
+}
+
+
+/* SHOWCASE FIX */
+
+.showcase{
+    flex-wrap:wrap;
+}
+
+
+.showcase-image{
+    flex:1;
+    min-width:300px;
+    height:auto;
+}
+
+
+.showcase-image img{
+    height:auto;
+    max-height:400px;
+}
+
+
+
+/* PRODUCT CARDS */
+
+.card img{
+
+height:220px;
+object-fit:cover;
+
+}
+
+
+
+/* MOBILE NAVBAR */
+
+@media(max-width:768px){
+
+header{
+
+height:70px;
+
+}
+
+
+nav{
+
+position:absolute;
+top:70px;
+left:0;
+width:100%;
+background:#000;
+display:none;
+flex-direction:column;
+padding:20px;
+
+}
+
+
+nav a{
+
+margin:15px 0;
+font-size:18px;
+
+}
+
+
+nav.active{
+
+display:flex;
+
+}
+
+
+}
+
+
+
+/* MOBILE TEXT */
+
+@media(max-width:500px){
+
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+
+.hero p{
+
+font-size:16px;
+
+}
+
+
+.featured h2,
+.showcase h2,
+.why h2,
+.reviews h2{
+
+font-size:28px;
+
+}
+
+
+.products{
+
+grid-template-columns:1fr;
+
+}
+
+
+}
+
+
+/* PREVENT OVERFLOW */
+
+section{
+
+overflow:hidden;
+
+}
+
