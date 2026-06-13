@@ -281,7 +281,13 @@ display:block;
 border-radius:10px;
 
 }
+.hero-image{
 
+
+animation:float 4s infinite;
+
+
+}
 
 button{
 
