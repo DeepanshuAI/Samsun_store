@@ -211,8 +211,7 @@ box-shadow:0 0 30px #1428a0;
 
 .card img{
 width:100%
-height:auto;
-max-height:250px;
+height:250px;
 object-fit:cover;
 border-radius:15px;
 display:block;
@@ -580,40 +579,49 @@ object-fit:cover;
 @media(max-width:768px){
 
 header{
+    height:70px;
+    padding:0 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
 
-height:70px;
 
+.logo{
+    font-size:20px;
+}
+
+
+.menu-btn{
+    display:block;
+    position:absolute;
+    right:20px;
+    top:20px;
+    font-size:30px;
+    z-index:200;
 }
 
 
 nav{
-
-position:absolute;
-top:70px;
-left:0;
-width:100%;
-background:#000;
-display:none;
-flex-direction:column;
-padding:20px;
-
-}
-
-
-nav a{
-
-margin:15px 0;
-font-size:18px;
-
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    background:#000;
+    display:none;
+    flex-direction:column;
+    padding:20px;
 }
 
 
 nav.active{
-
-display:flex;
-
+    display:flex;
 }
 
+
+nav a{
+    margin:15px 0;
+}
 
 }
 
