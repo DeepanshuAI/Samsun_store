@@ -28,32 +28,18 @@ document.querySelector(".loader").style.display="none";
 
 // MOBILE MENU
 
-
-const menu =
-document.querySelector(".menu-btn");
-
-
-const nav =
-document.querySelector("nav");
-
+const menu = document.querySelector(".menu-btn");
+const nav = document.querySelector("nav");
 
 if(menu && nav){
 
 menu.addEventListener("click",()=>{
 
-    nav.classList.toggle("active");
+nav.classList.toggle("active");
 
 });
-}
-
-
-
-function toggleMenu(){
-
-document.querySelector("nav").classList.toggle("active");
 
 }
-
 // MODAL
 
 
