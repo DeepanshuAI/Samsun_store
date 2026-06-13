@@ -4,349 +4,176 @@
 <head>
 
 <title>Samsung Showroom Port Blair</title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <link rel="stylesheet" href="style.css">
-
 </head>
-
-
 <body>
-
-
+    
 <!-- LOADER -->
 
 <div class="loader" id="loader">
-
     <div class="samsung-logo">
         SAMSUNG
     </div>
-
     <div class="loading"></div>
-
 </div>
 
-
-
+    
 <header id="navbar">
-
-
 <div class="logo">
-
 Samsung
 <span>
 Experience Store
 </span>
-
 </div>
-
-
 
 <div class="menu-btn">
 ☰
 </div>
 
-
-
 <nav>
-
 <a href="index.html">Home</a>
-
 <a href="products.html">Products</a>
-
 <a href="about.html">About</a>
-
 <a href="contact.html">Contact</a>
-
 </nav>
-
-
+    
 </header>
     
     
-
 <section class="hero">
-
-
 <div class="hero-content">
-
-
 <h1>
-
-Discover The Future Of Technology
-
-</h1>
-
-
+Discover The Future Of Technology</h1>
 <p>
-
 Latest Samsung Smartphones,
 Smart TVs and Appliances
-
 </p>
 
-
-
 <div class="hero-buttons">
-
-
-<button>
-
-Explore Products →
-
-</button>
-
-
+<button> Explore Products →</button>
 <button class="outline">
-
 Visit Store
-
 </button>
-
-
 </div>
-
-
-
 </div>
-
-
-
-
 
 <div class="hero-image">
-
-
 <img src="images/smartphone.jpg">
-
 </div>
-
-
 </section>
+
+    
 <section class="featured">
-
-
 <h2>
 Latest Products
 </h2>
-
-
-
 <div class="products">
-
-
 <div class="card">
-
-
 <img src="images/smartphone.jpg">
-
 <h3>
 Samsung Galaxy S25
 </h3>
-
-
 <button onclick="openModal(
 'Galaxy S25',
 'Latest Galaxy smartphone with AI features'
 )">
 View Details
 </button>
-
-
 </div>
 
-
-
-
-
 <div class="card">
-
-
 <img src="images/smart-tv.jpg">
-
 <h3>
 Samsung Smart TV
 </h3>
-
-
 <button onclick="openModal(
 'Samsung Smart TV',
 'Crystal UHD 4K entertainment experience'
 )">
 View Details
 </button>
-
-
 </div>
-
-
-
-
-
 <div class="card">
-
-
 <img src="images/refrigerator.webp">
 <h3>
 Samsung Refrigerator
 </h3>
-
-
 <button onclick="openModal(
 'Samsung Refrigerator',
 'Energy efficient smart cooling'
 )">
 View Details
 </button>
-
-
 </div>
-
-
-
 </div>
-
-
 </section>
-
 
 
 <section class="showcase">
-
-
 <div class="showcase-text reveal">
-
-
 <h2>
 Galaxy Innovation
 </h2>
-
-
 <p>
-
 Experience powerful performance,
 AI features and premium design.
-
 </p>
-
-
 <ul>
-
 <li>✓ Galaxy AI Technology</li>
-
 <li>✓ Powerful Cameras</li>
-
 <li>✓ Premium Performance</li>
-
 <li>✓ Samsung Care Support</li>
-
 </ul>
 
-
-<button>
-Explore Galaxy →
-</button>
-
-
+<button>Explore Galaxy →</button>
 </div>
-
-
-
-
-
+    
 <div class="showcase-image reveal">
-
-
 <img src="images/smartphone.jpg">
-
-
 </div>
-
-
-
 </section>
 
 
-
-
-
 <section class="why">
-
-
 <h2>
 Why Choose Us?
 </h2>
-
-
-
 <div class="why-grid">
-
-
-
 <div class="glass-card reveal">
-
 <h3>
 100%
 </h3>
-
 <p>
 Original Samsung Products
 </p>
-
 </div>
-
-
-
-
 <div class="glass-card reveal">
-
 <h3>
 10+
 </h3>
-
 <p>
 Product Categories
 </p>
-
 </div>
 
-
-
-
-
 <div class="glass-card reveal">
-
 <h3>
 24/7
 </h3>
-
 <p>
 Customer Support
 </p>
-
 </div>
-
-
-
-
 <div class="glass-card reveal">
-
 <h5>
 ★  ★  ★  ★  ★
 </h5>
-
 <p>
 Customer Satisfaction
 </p>
-
 </div>
-
-
-
 </div>
-
-
 </section>
 
 
@@ -354,146 +181,79 @@ Customer Satisfaction
 
 
 <section class="reviews">
-
-
 <h2>
 Customer Reviews
 </h2>
-
-
 <div class="review">
-
-
 <h3>
 Rahul
 </h3>
-
-
 <div class="stars">
 ★★★★★
 </div>
-
-
 <p>
 Excellent Samsung showroom experience in Port Blair.
 </p>
-
-
 </div>
-
-
-
 <div class="review">
-
-
 <h3>
 Priya
 </h3>
-
-
 <div class="stars">
 ★★★★★
 </div>
-
-
 <p>
 Helpful staff and latest products available.
 </p>
-
-
 </div>
-
-
-
 </section>
-
-
-
-
-
-
-
+ 
 <!-- MODAL -->
-
-
 <div class="modal">
-
-
 <div class="modal-box">
-
-
 <span onclick="closeModal()">
 ×
 </span>
-
-
 <h2 id="title"></h2>
-
-
 <p id="desc"></p>
-
-
 <button>
 Enquire Now
 </button>
-
-
 </div>
-
-
 </div>
-
-
-
-
-
 
 
 <footer>
-
 
 <h2>
 Samsung Showroom Port Blair
 </h2>
 
-
 <p>
 Techmec Digital Plaza
 </p>
-
 
 <p>
 2 & 3 Gurudwara Line Bazaar,
 Aberdeen, Sri Vijaya Puram
 </p>
 
-
 <p>
 📞 03192 244 466
 </p>
 
-
 <div>
-
 <a>Instagram</a>
 <a>Facebook</a>
 <a>WhatsApp</a>
-
 </div>
-
-
 <p class="copy">
 © 2026 Samsung Showroom Port Blair
 </p>
-
-
 </footer>
-
 
 
 <script src="script.js"></script>
 
-
 </body>
-
 </html>
