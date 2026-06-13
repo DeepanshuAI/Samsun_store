@@ -249,6 +249,38 @@ margin-top:20px;
 }
 
 
+.hero-image{
+
+width:100%;
+
+max-width:100%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+overflow:hidden;
+
+}
+
+
+.hero-image img{
+
+width:100%;
+
+height:auto;
+
+max-height:400px;
+
+object-fit:cover;
+
+display:block;
+
+border-radius:10px;
+
+}
 
 
 button{
@@ -498,6 +530,41 @@ flex-direction:column;
 
 }
 
+
+}
+
+/* ================= SHOWCASE ================= */
+
+.showcase-image{
+
+width:100%;
+
+max-width:100%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+overflow:hidden;
+
+}
+
+
+.showcase-image img{
+
+width:100%;
+
+height:auto;
+
+max-height:350px;
+
+object-fit:cover;
+
+display:block;
+
+border-radius:10px;
 
 }
 
