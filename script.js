@@ -1,23 +1,18 @@
-
-// Samsung loader
-
-
-setTimeout(()=>{
-
-document.getElementById("loader").style.display="none";
-
-
-},2000);
-// remove loader after page load
+// ================= LOADER =================
 
 
 window.addEventListener("load",()=>{
 
-setTimeout(()=>{
+    const loader = document.querySelector(".loader");
 
-document.querySelector(".loader").style.display="none";
+    loader.style.opacity = "0";
 
-},1000);
+
+    setTimeout(()=>{
+
+        loader.style.display="none";
+
+    },500);
 
 
 });
@@ -26,85 +21,47 @@ document.querySelector(".loader").style.display="none";
 
 
 
-// MOBILE MENU
+// ================= MOBILE MENU =================
 
-const menu = document.querySelector(".menu-btn");
+
+const menuBtn = document.querySelector(".menu-btn");
+
 const nav = document.querySelector("nav");
 
-if(menu && nav){
 
-menu.addEventListener("click",()=>{
 
-nav.classList.toggle("active");
+menuBtn.addEventListener("click",()=>{
+
+
+    nav.classList.toggle("active");
+
 
 });
 
-}
-// MODAL
-
-
-function openModal(title,desc){
-
-
-document.querySelector(".modal").style.display="flex";
-
-
-document.getElementById("title").innerHTML=title;
-
-
-document.getElementById("desc").innerHTML=desc;
-
-
-}
 
 
 
-function closeModal(){
-
-document.querySelector(".modal").style.display="none";
-
-}
-
-// PRODUCT SEARCH
 
 
-const search = document.getElementById("search");
+// CLOSE MENU AFTER CLICK
 
 
-if(search){
+const links = document.querySelectorAll("nav a");
 
 
-search.addEventListener("keyup",()=>{
+links.forEach(link=>{
 
 
-let value = search.value.toLowerCase();
+    link.addEventListener("click",()=>{
 
 
-
-document.querySelectorAll(".card[data-name]")
-.forEach(product=>{
+        nav.classList.remove("active");
 
 
-let name =
-product.dataset.name;
+    });
 
 
-
-if(name.includes(value)){
-
-
-product.style.display="block";
-
-
-}
-
-else{
-
-
-product.style.display="none";
-
-
-}
+});
 
 
 
