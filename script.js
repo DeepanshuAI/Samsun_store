@@ -48,7 +48,11 @@ menu.addEventListener("click",()=>{
 
 
 
+function toggleMenu(){
 
+document.querySelector("nav").classList.toggle("active");
+
+}
 
 // MODAL
 
